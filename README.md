@@ -12,12 +12,15 @@ __icPhone__ is Information-Centric Networking based communication mobile-device.
 1. Set prerequisites
 	
 	`$ sudo rpi-update`
+
 	`$ sudo apt-get update`
 
 2. Install Java JDK & Git
 	
 	`$ sudo add-apt-repository ppa:webupd8team/java`
+
 	`$ sudo apt-get install oracle-java7-jdk`
+	
 	`$ sudo apt-get install git-core`
 
 3. Install default package for CCNx
@@ -27,21 +30,27 @@ __icPhone__ is Information-Centric Networking based communication mobile-device.
 4. Download the CCNx source code
 	
 	`$ wget www.ccnx.org/releases/ccnx-0.8.2.tar.gz`
+
 	`$ tar -zxvf ccnx-0.8.2.tar.gz`
 
 5. Build the CCNx source code
 	
 	`$ cd ccnx-0.8.2/`
+
 	`$ sudo ./configure`
+	
 	`$ sudo make`
+	
 	`$ sudo make install`
     
 6. Clone icPhone App from GitHub
 
 	`$ git clone https://github.com/MobileConvergenceLab/icPhone-phoneapp.git`
+	
 7. Run CCNTalk or CCNVoice application by JAR file
 	
 	`$ cd icPhone-phoneapp`
+
 	`$ java -jar CCNTalk.jar` or `$ java -jar CCNVoice.jar`
 
 
