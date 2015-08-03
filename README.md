@@ -61,7 +61,7 @@ __icPhone__ is Information-Centric Networking based communication mobile-device.
 ## Run icPhone & applications
 
 ##### (1) Turn on the icPhone
-<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_desktop.jpg" width="50%">
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_desktop.jpg" width="30%">
 
 ##### (2) Start CCNx Daemon
 
@@ -79,13 +79,13 @@ __icPhone__ is Information-Centric Networking based communication mobile-device.
 
 
 ##### (5) Enter a room name(chatting room)
-<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_1.png">
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_1.png"  width="50%">
 
 ##### (6-1) In case of CCN Talk, Enter a message in text field and Press send button
-<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_4.jpg">
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_4.jpg"  width="50%">
 
 ##### (6-2) In case of CCN Voice, Record your voice by pressing record button and Press send button. If you want to listen
-<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_2.png">
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_2.png"  width="30%">
 
 
 &nbsp;&nbsp;&nbsp;
@@ -115,17 +115,17 @@ If you want to modify the code of these apps or to re-build these apps, follow t
 
 
 ##Hardware main component of icPhone
-<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_all.JPG">
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_all.JPG"  width="30%">
 
 > List of icPhone's components
 > 
 > (1) Raspberry Pi (Pi B / Pi B+ / Pi2)
 > 
-> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_pies.JPG">
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_pies.JPG"  width="30%">
 > 
 > (2) 320x240 2.8" TFT LCD + Touch screen (SPI Interface or USB, etc)
 > 
-> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_touchscreen.jpg">
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_touchscreen.jpg"  width="30%">
 > 
 > (3) USB wireless LAN card(dongle)
 > 
@@ -133,13 +133,13 @@ If you want to modify the code of these apps or to re-build these apps, follow t
 > 
 > (4) 3.5mm speaker or earphones for walkie-talkie app
 > 
-> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_mic.jpg">
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_mic.jpg"  width="30%">
 > 
 > (5) USB audio adaptor and mic for recording voice in walkie-talkie app
 > 
-> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_audio_adapter.JPG">
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_audio_adapter.JPG"  width="30%">
 > 
-> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_mic.jpg">
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_mic.jpg"  width="30%">
 
 
 
