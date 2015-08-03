@@ -3,8 +3,9 @@
 &nbsp;
 
 ## What is icPhone?
-__icPhone__ is Information-Centric Networking based communication mobile-device. Its hardware is Single Board Computer called Raspberry Pi and includes 2.8 TFT LCD touchscreen. The __icPhone__ is based on CCN(Content-Centric Networking) architecture that is among ICN architecture. This device has Group chatting and PTT(Push To Talk; walkie-talkie) application which operate over the CCN architecture using open source project implementing CCN, called [CCNx](http://ccnx.org). CCNx is one of the CCN projects that are studied in Palo Alto Research Center(PARC).
+__icPhone__ is Information-Centric Networking based communication mobile-device. Its hardware is Single Board Computer called Raspberry Pi and includes 2.8 TFT LCD touchscreen. The __icPhone__ is based on CCN(Content-Centric Networking) architecture that is among ICN architecture. This device has Group chatting and PTT(Push To Talk; walkie-talkie) application which operate over the CCN architecture using open source project implementing CCN, called [CCNx](http://ccnx.org). CCNx is one of the CCN projects that are studied in Palo Alto Research Center([PARC](https://www.parc.com/)).
 
+![](https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_1.png)
 &nbsp;
 
 
@@ -53,8 +54,39 @@ __icPhone__ is Information-Centric Networking based communication mobile-device.
 
 	`$ java -jar CCNTalk.jar` or `$ java -jar CCNVoice.jar`
 
+&nbsp;
 
-## Run CCNx
+## Run icPhone & applications
+
+##### (1) Turn on the icPhone
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_desktop.jpg">
+
+##### (2) Start CCNx Daemon
+
+`$ ccndstart`
+
+##### (3) Connect each devices by tunneling
+
+`$ ccndc add ccnx:/ tcp ***.***.***.***`	
+
+##### (4) Run applications(CCN Talk or CCN Voice) by double-clicking JAR file
+
+`$ cd icPhone-phoneapp`
+
+`$ java -jar CCNTalk.jar` or `$ java -jar CCNVoice.jar`
+
+
+##### (5) Enter a room name(chatting room)
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_1.jpg">
+
+##### (6-1) In case of CCN Talk, Enter a message in text field and Press send button
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_4.jpg">
+
+##### (6-2) In case of CCN Voice, Record your voice by pressing record button and Press send button. If you want to listen
+<img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/pic_2.jpg">
+
+
+
 1. Start daemon
 	
 	`$ ccndstart`
@@ -63,31 +95,49 @@ __icPhone__ is Information-Centric Networking based communication mobile-device.
 	
 	`$ ccndc add ccnx:/ tcp ***.***.***.***`	
 
-3. Run app
-	
-	`$ ccnchat ccnx:/room_name`
 
 
 ## Import the project (IDE : Eclipse)
-(1) Download eclipse IDE from [https://www.eclipse.org](https://www.eclipse.org)
+If you want to modify the code of these apps or to re-build these apps, follow thie procedure
+##### (1) Download eclipse IDE from [https://www.eclipse.org](https://www.eclipse.org)
 ![](https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/1_eclipse_download.png)
 
-(2) Unzip eclipse file & Execute eclipse
+##### (2) Unzip eclipse file & Execute eclipse
 
-(3) Import the project(CCNTalk or CCNVoice)
+##### (3) Import the project(CCNTalk or CCNVoice)
 ![](https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/2_import_the_project.png)
 ![](https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/3_select_our_project.png)
 
-(4) Configure build path
+##### (4) Configure build path
 ![](https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/4_configure_build_path.png)
 
-(5) Add external library
+##### (5) Add external library
 ![](https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/5_add_external_library.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-##Hardware Component of icPhone
-![](https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/deployment_of_hardware.png)
+
+* * *
+
+
+##Hardware main component of icPhone
+![](https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_all.png)
+
+> List of icPhone's components
+> 1. Raspberry Pi (Pi B / Pi B+ / Pi2)
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_pies.JPG">
+> 2. 320x240 2.8" TFT LCD + Touch screen (SPI Interface or USB, etc)
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_touchscreen.JPG">
+> 3. USB wireless LAN card(dongle)
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_dongle.JPG">
+> 4. 3.5mm speaker or earphones for walkie-talkie app
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_mic.JPG">
+> 5. USB audio adaptor and mic for recording voice in walkie-talkie app
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_audio_adapter.jpg">
+> <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_mic.jpg">
+
+
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
