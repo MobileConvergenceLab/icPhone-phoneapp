@@ -142,6 +142,38 @@ If you want to modify the code of these apps or to re-build these apps, follow t
 > <img src="https://github.com/MobileConvergenceLab/icPhone-phoneapp/raw/master/img/img_component_mic.jpg"  width="30%">
 
 
+&nbsp;&nbsp;&nbsp;
+
+
+## How to set Touch Screen
+(1) Download firmware
+
+`$ sudo wget http://goo.gl/1BOfJ -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update`
+
+(2) Update firmware
+
+`$ sudo rpi-update`
+
+(3) Update kernel version
+
+`$ sudo apt-get upgrade`
+
+`$ sudo apt-get update`
+
+(4) Install software related LCD (check your LCD model: hy28a or hy28b)
+
+`$ git clone https://github.com/rasplay/RPiHY28bShield`
+
+`$ cd RPiHY28bShield`
+
+`$ sh setup.sh hy28b`
+
+(5) Turn on the touch screen
+
+`$ sudo con2fbmap 1 1`
+
+`$ FRAMEBUFFER=/dev/fb1 startx`
+
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
